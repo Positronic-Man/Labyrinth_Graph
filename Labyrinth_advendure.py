@@ -388,7 +388,7 @@ def run():
         global phrase
         phrase = []
         file = lng+'.lng'
-        f = open(file)
+        f = open(file, encoding="utf8")
         for line in f.read().splitlines():
             phrase.append(line)
         return phrase
